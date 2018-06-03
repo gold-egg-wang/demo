@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip 提示</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        a:hover{text-decoration: none}
+        p{margin-bottom:0}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Tool Tip</h1>
+            <small>Bootstrap test</small>
+        </div>
+
+        <p class="muted">
+            但是更多的人只是去那里观看这些聪明的创作品表演体操和一些时髦的舞步。
+            But many more people were there just to see the clever creations perform gymnastics and some stylish dance moves.
+            But many more people were there just to see the clever creations <a href="" data-toggle="tooltip" title="我显示提示" data-original-title="我是提示">Tooltip</a> perform gymnastics and some stylish dance moves.
+            But many more people were there just to see the clever creations perform<a href="" data-toggle="tooltip" title="我显示提示" data-original-title="我是提示">Tooltip</a> gymnastics and some stylish dance moves.
+            But many more people were there just to see the clever creat<a href="" data-toggle="tooltip" title="我显示提示" data-original-title="我是提示">Tooltip</a>ions perform gymnastics and some stylish dance moves.
+            But many more people were there just to see the clever creations perform gymnastics and some stylish dance moves.
+            But many more people were there just to see the clever creatio<a href="" data-toggle="tooltip" title="我显示提示" data-original-title="我是提示">Tooltip</a>ns perform gymnastics and some stylish dance moves.
+        </p>
+
+        <p>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="我显示左边提示" data-original-title="left button">left button</button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="我右边显示提示" data-original-title="right button">right button</button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="我上边显示提示" data-original-title="top button">top button</button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="我下边显示提示" data-original-title="bottom button">bottom button</button>
+        </p>
+    </div>
+    <script type="text/javascript" src="../jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</body>
+</html>

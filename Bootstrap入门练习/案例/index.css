@@ -1,0 +1,321 @@
+h1,h3,p,a,button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: #ccc;
+}
+
+.side-nav {
+    position: fixed;
+    top: 45%;
+    right: 20px;
+    z-index: 1;
+}
+
+.side-nav ul.nav-side-nav {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.side-nav ul.nav-side-nav li {
+    display: block;
+    line-height: 1.45em;
+    margin: 0;
+    padding: 8px 0;
+}
+.side-nav ul.nav-side-nav li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #E2E2E2;
+}
+
+.onepage {
+    height: 750px;
+}
+.onepage-bg {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;/*contain把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。cover把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+背景图像的某些部分也许无法显示在背景定位区域中。*/
+}
+#onepage-bg {
+    background: url("img/4e0372f8ad55a24323235f6b0696bd11.jpg");
+}
+.headh1content {
+    margin-left: 10px;
+    line-height: 75px;
+}
+.title-text {
+    margin-top: 100px;
+}
+.headfontsize h1 {
+    font-size: 50px;
+    color: #9dffff;
+}
+.headfontsize p {
+    color: #9dffff;
+}
+
+/*twopage*/
+.twopage {
+    padding: 2px 0 0 2px;
+    height: auto;
+    position: relative;
+}
+.twopage-text {
+    width: 100%;
+    text-align: center;
+}
+
+.twopage-text-h1 {
+    margin-left: 120px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+}
+
+.twopage-text-h1 img {
+    height: 120px;
+    width: 200px;
+    margin-top: -20px;
+}
+
+.twopage .row{
+    margin-right:0;
+    marigin-left:0;
+}
+
+.twopage-courses {
+    float: left;
+    background: #fff;
+    padding: 0 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.twopage-courses a{
+    float: left;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    position: relative;
+}
+
+.twopage-courses img {
+    height: 400px;
+    width: 575px;
+}
+.classicon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    opacity: 0;
+}
+
+.classicon h3 {
+    margin-top: 120px;
+    color: #d1e973;
+}
+.classicon h1 {
+    color: #fff5e1;
+}
+
+.classicon:hover {
+    background: #1eb450;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+.twopage-btn {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.twopage-btn .btn-lg {
+    font-size: 25px;
+}
+
+#twopage-easy {
+    margin: 50px 0;
+}
+
+/*threepage*/
+.threepage {
+    position: absolute;
+    width:100%;
+    height: 800px;
+}
+
+.threepage-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#threepage-bg {
+    background: url("img/839233.jpg");
+}
+
+.threepagecontent {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.threepagetext {
+    margin-top: 100px;
+}
+
+.threepagetext p {
+    margin-top: 20px;
+    color: #5268ff;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.threepagebtncontent {
+    margin-top: 300px;
+    font-size: 25px;
+}
+
+/*fourpage*/
+.fourpage {
+    height: 1000px;
+    background-color: #afffd3;
+    margin-top: 800px;
+}
+
+.coursexingqing-text {
+    color: black;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.coursexingqing-text p {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.fourpage .container .carousel {
+    margin-top: 50px;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    height: 550px;
+}
+
+.fourpagebtn {
+    text-align: center;
+    margin-top: 80px;
+}
+.fourpagebtn .btn-lg {
+    font-size: 25px;
+}
+/*.carousel-control.left {*/
+    /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);*/
+    /*background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);*/
+    /*background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));*/
+    /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);*/
+    /*background-repeat: repeat-x;*/
+/*}*/
+
+/*.carousel-control.right {*/
+    /*right: 0;*/
+    /*left: auto;*/
+    /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);*/
+    /*background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);*/
+    /*background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));*/
+    /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);*/
+    /*background-repeat: repeat-x;*/
+/*}*/
+
+/*fivepage*/
+.fivepage-bg {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+
+#fivepage-bg {
+    background-image: url("img/989fb46b0abcaf8d7398bf77295ef93b.jpg");
+    /*-webkit-filter: blur(15px);*/
+    /*-moz-filter: blur(15px);*/
+    /*-o-filter: blur(15px);*/   /*背景虚化*/
+    /*-ms-filter: blur(15px);*/
+    /*filter: blur(15px);*/
+}
+
+.footertext {
+    margin-top: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footercenter {
+    margin-top: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footercenter .left {
+    float:left;
+    margin-left:-600px;
+    transition: all 0.5s;
+}
+
+.footercenter  .top {
+    margin-top: -300px;
+    margin-left: 600px;
+    transition: all 0.5s;
+}
+
+.footercenter  .right {
+    margin-right:-600px;
+    transition: all 0.5s;
+    float: right;
+}
+.ac .left{margin-left:0;}
+.ac .top{ margin-top: 0; margin-left: 0;}
+.ac .right{margin-right:0;}
+
+.queyeicon {
+    width: 250px;
+    height: 150px;
+}
+
+.queyeicon:hover {
+    border: 2px solid #67def7;
+}
+
+.footerbtn {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.footerbtn-text {
+    margin-top: 20px;
+    color: #e1e1e1;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<div class="container col-md-offset-4" >
+    <div>
+        <textarea name="" id="" cols="50" rows="5"></textarea>
+    </div>
+    <div class="pull-left">
+        <button type="button" class="num btn-lg">0</button>
+        <button type="button" class="num btn-lg">1</button>
+        <button type="button" class="num btn-lg">2</button>
+        <button type="button" class="num btn-lg">3</button>
+        <button type="button" class="num btn-lg">4</button>
+        <button type="button" class="num btn-lg">5</button>
+        <button type="button" class="num btn-lg">6</button>
+        <button type="button" class="calculate btn-lg" num="4">acos</button><br>
+        <button type="button" class="num btn-lg">7</button>
+        <button type="button" class="num btn-lg">9</button>
+        <button type="button" class="num btn-lg">-</button>
+        <button type="button" class="num btn-lg">°</button>
+        <button type="button" class="calculate btn-lg" num="1">abs</button>
+        <button type="button" class="calculate btn-lg" num="3">sqrt</button>
+        <button type="button" class="calculate btn-lg" num="5">asin</button><br>
+        <button type="button" class="calculate btn-lg" num="6">atan</button>
+        <button type="button" class="calculate btn-lg" num="7">cos</button>
+        <button type="button" class="calculate btn-lg" num="8">sin</button>
+        <button type="button" class="calculate btn-lg" num="9">tan</button>
+        <button type="button" class="calculate btn-lg" num="2">log</button>
+        <button type="button" class="return btn-lg ">c</button>
+    </div>
+</div>
+<script src="../jquery-3.3.1.js"></script>
+<script>
+    $(".return").click(function(){
+        $('textarea').text("");
+    })
+    $(".num").click(function(){
+        var btn = $(this).text();
+        var text = $("textarea");
+         text.append(btn);
+    })
+    $(".calculate").click(function(){
+        var num = parseInt($("textarea").text());
+        var i = parseInt($(this).attr("num"));
+        switch(i)
+        {
+            case 1:
+                alert(Math.abs(num));
+                break;
+            case 2:
+                alert(Math.log(num));
+                break;
+            case 3:
+                alert(Math.sqrt(num));
+                break;
+            case 4:
+                alert(Math.acos(num));
+                break;
+            case 5:
+                alert(Math.asin(num));
+                break;
+            case 6:
+                alert(Math.atan(num));
+                break;
+            case 7:
+                alert(Math.cos(num));
+                break;
+            case 8:
+                alert(Math.sin(num));
+                break;
+            case 9:
+                alert(Math.tan(num));
+                break;
+        }
+    })
+</script>
+</body>
+</html>
